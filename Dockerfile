@@ -7,4 +7,4 @@ RUN curl -L http://xrl.us/cpanm > /usr/bin/cpanm && chmod +x /usr/bin/cpanm
 
 RUN rm -f /etc/localtime && ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime ; fi
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
