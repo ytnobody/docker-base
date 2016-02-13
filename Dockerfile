@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:wheezy
 MAINTAINER ytnobody <ytnobody@gmail.com>
 
 RUN apt-get update && apt-get install perl curl make gcc git libplack-perl -y && apt-get clean
